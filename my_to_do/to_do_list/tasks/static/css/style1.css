@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+.content{
+  background-color: lightblue;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+h1 { 
+    color:rgb(15, 37, 146);
+    font-family: verdana;
+}
+
+
+
+a {
+  color:#fff;
+  text-decoration: none;
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem;
+  padding-top: 0.875rem; /* 14px */
+  padding-bottom: 0.875rem;
+  background-color: rgb(20 184 166);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */  
+  border-radius: 1.5rem;
+}
+
+a:hover{
+  background-color: rgb(19 78 74);
+}
+
+
+form{
+  font-size: 20px;
+  margin-top: 24px;
+  margin-left: 18px;
+  margin-bottom: 24px;
+}
+
+input[type=text] {
+  width: 50%;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

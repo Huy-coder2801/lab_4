@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <title>To do list</title>
+</head>
+<body>
+    
+    {% block content %}
+    <div class="content">
+        <h1>This is my list:</h1>
+        <ul>
+            {% for task in tasks %}
+                <li>{{ task }}</li>
+            {% empty %}
+                <li>No task.</li>
+            {% endfor %}
+        </ul>
+        
+    </div>
+    <a href="{% url 'tasks:add' %}">Add a new tasks</a>
+    {% endblock %}
+</body>
+</html>
